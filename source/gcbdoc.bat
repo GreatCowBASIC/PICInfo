@@ -208,3 +208,4 @@ echo SYNTAX gcbdoc filename conversion_type
 
 :END
 endlocal
+echo END

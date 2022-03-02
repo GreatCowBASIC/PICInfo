@@ -14,7 +14,7 @@
 </info>
 <section xml:id="_introducing_picinfo">
 <title>Introducing PICInfo</title>
-<simpara>Welcome to the PICInfo software.  An support application for Great Cow BASIC.</simpara>
+<simpara>Welcome to the PICInfo software.  A support application for the Great Cow BASIC 8-bit compiler.</simpara>
 <simpara>This application supports Microchip PIC microcontrollers only, for AVR see AVRInfo.</simpara>
 <simpara>This is a free application that generates configuration code to be inserted into your project.&#160;&#160;
 Using an intuitive interface, it enables and configures the coniguration functions specific to your application.</simpara>
@@ -93,8 +93,8 @@ The dialog will validate the selected folder. &#160;&#160;The folder <emphasis r
 <tbody>
 <row>
 <entry align="center" valign="top"><simpara>ASCIIDOCs rendered</simpara></entry>
-<entry align="center" valign="top"><simpara>2020-12-21<?asciidoc-br?>
-11:41:58 GMT Standard Time</simpara></entry>
+<entry align="center" valign="top"><simpara>2022-03-02<?asciidoc-br?>
+19:15:46 GMT Standard Time</simpara></entry>
 </row>
 <row>
 <entry align="center" valign="top"><simpara>Master ToC information</simpara></entry>

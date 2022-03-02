@@ -1,0 +1,24 @@
+var doStem = true;
+//List of indexed files.
+fl = new Array();
+fl["0"]= "index.html";
+fl["1"]= "_bits_tab.html";
+fl["2"]= "_changes.html";
+fl["3"]= "_chipdata_tab.html";
+fl["4"]= "_filters.html";
+fl["5"]= "_interrupts_tab.html";
+fl["6"]= "_introducing_picinfo.html";
+fl["7"]= "_options_tab.html";
+fl["8"]= "_registers_tab.html";
+fl["9"]= "_select_tab.html";
+fil = new Array();
+fil["0"]= "index.html@@@PICInfo documentation@@@null";
+fil["1"]= "_bits_tab.html@@@Bits Tab@@@null";
+fil["2"]= "_changes.html@@@Changes@@@null";
+fil["3"]= "_chipdata_tab.html@@@ChipData Tab@@@null";
+fil["4"]= "_filters.html@@@Filters@@@null";
+fil["5"]= "_interrupts_tab.html@@@Interrupts Tab@@@null";
+fil["6"]= "_introducing_picinfo.html@@@Introducing PICInfo@@@null";
+fil["7"]= "_options_tab.html@@@Options Tab@@@null";
+fil["8"]= "_registers_tab.html@@@Registers Tab@@@null";
+fil["9"]= "_select_tab.html@@@Select Tab@@@null";

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>PICInfo documentation</title>
+<date>2020-12-21</date>
+<author>
+<personname>
+<firstname>The Great Cow BASIC development team @ 2020</firstname>
+</personname>
+</author>
+<authorinitials>T</authorinitials>
+</info>
+<section xml:id="_introducing_picinfo">
+<title>Introducing PICInfo</title>
+<simpara>Welcome to the PICInfo software.  An support application for Great Cow BASIC.</simpara>
+<simpara>This application supports Microchip PIC microcontrollers only, for AVR see AVRInfo.</simpara>
+<simpara>This is a free application that generates configuration code to be inserted into your project.&#160;&#160;
+Using an intuitive interface, it enables and configures the coniguration functions specific to your application.</simpara>
+<simpara>The application also provides details of the microcontroller in terms of parameters like registers, register bits, interrupts.&#160;&#160;
+PICInfo supports 8-bit PIC microcontrollers.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/FrontScreen.PNG" contentdepth="auto" align="center"/>
+</imageobject>
+<textobject><phrase>graphic</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Operating System Support</emphasis></simpara>
+<simpara>PICInfo is released with support for Windows, Linux and macOS.</simpara>
+<simpara>The application for Windows is included in the Great Cow BASIC release.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Operating System Specific Build</emphasis></simpara>
+<simpara>As the software is Open Source you can create the application for any of the supported operating systems.&#160;&#160;
+Download and install the XOJO development software, load the source PICInfo project and enjoy.&#160;&#160;
+You can modify the project and share.
+<?asciidoc-br?>
+<?asciidoc-br?>
+<?asciidoc-br?>
+<?asciidoc-br?></simpara>
+<simpara><emphasis role="strong">First use of the application</emphasis></simpara>
+<simpara>The application requires a default Great Cow BASIC default CHIPDATA folder.
+The application will show the following <literal>Initialising</literal> as the selected microcontroller.
+The pictures show the initial start up message.</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/InitialWindow.PNG" contentdepth="auto" align="center"/>
+</imageobject>
+<textobject><phrase>graphic</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara>Select <literal>OK</literal> and then select <literal>EDIT/PREFERENCES</literal> to set the default Great Cow BASIC default CHIPDATA folder.
+As show below:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/Preferences.PNG" contentdepth="auto" align="center"/>
+</imageobject>
+<textobject><phrase>graphic</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+The dialog will validate the selected folder. &#160;&#160;The folder <emphasis role="strong">MUST</emphasis> contain the chipdata.def file.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<?asciidoc-br?>
+<?asciidoc-br?></simpara>
+</section>
+<section xml:id="_changes">
+<title>Changes</title>
+<simpara><emphasis role="strong">Formal Release</emphasis></simpara>
+<simpara><?asciidoc-br?></simpara>
+<informaltable frame="all" rowsep="1" colsep="1">
+<?dbhtml table-width="60%"?>
+<?dbfo table-width="60%"?>
+<?dblatex table-width="60%"?>
+<tgroup cols="2">
+<colspec colname="col_1" colwidth="128*"/>
+<colspec colname="col_2" colwidth="128*"/>
+<thead>
+<row>
+<entry align="center" valign="top"><emphasis role="strong">Reference</emphasis></entry>
+<entry align="center" valign="top"><emphasis role="strong">Time Stamp</emphasis></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center" valign="top"><simpara>ASCIIDOCs rendered</simpara></entry>
+<entry align="center" valign="top"><simpara>2020-12-21<?asciidoc-br?>
+11:41:58 GMT Standard Time</simpara></entry>
+</row>
+<row>
+<entry align="center" valign="top"><simpara>Master ToC information</simpara></entry>
+<entry align="center" valign="top"><simpara>2020-12-21<?asciidoc-br?>
+11:23:51 GMT Standard Time</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<simpara><?asciidoc-br?></simpara>
+<variablelist>
+<varlistentry>
+<term><emphasis role="strong">Changes in this release</emphasis></term>
+<listitem>
+<simpara>First release.</simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+<simpara>This is the Help file.  Please refer the sub-sections for details using the contents/folder view.</simpara>
+</section>
+<section xml:id="_select_tab">
+<title>Select Tab</title>
+<simpara><emphasis role="strong">Introduction:</emphasis></simpara>
+<simpara>The Select Tab is the key interface within the application.
+This tab enable the following:</simpara>
+<orderedlist numeration="arabic" startingnumber="1">
+<listitem>
+<simpara>Select of the PIC microcontroller</simpara>
+</listitem>
+<listitem>
+<simpara>Access to the Great Cow BASIC utilities - these are Operating System Specific and microcontroller specific</simpara>
+</listitem>
+<listitem>
+<simpara>Access the microcontroller dashboard</simpara>
+</listitem>
+<listitem>
+<simpara>Search for a microcontroller</simpara>
+</listitem>
+<listitem>
+<simpara>Edit the configuration options</simpara>
+</listitem>
+<listitem>
+<simpara>Copy the configuration to the CUT/PASTE buffer, and</simpara>
+</listitem>
+<listitem>
+<simpara>Reset the config to the defaults</simpara>
+</listitem>
+</orderedlist>
+<simpara>The picture below shows the main area of the Select Tab</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/FrontScreenDetails.PNG" align="center"/>
+</imageobject>
+<textobject><phrase>graphic</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Selection of the microcontroller</emphasis></simpara>
+<simpara>Selection can be made using two methods.&#160;&#160;
+Use either the <literal>PIC drop menu:</literal> or the <literal>search:</literal> dialog.&#160;&#160;</simpara>
+<simpara>You can filter the microcontrollers shown see <link linkend="_filters">Set Filter</link></simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Utilities</emphasis></simpara>
+<simpara>Selects microcontroller and operating specific utilities.
+<?asciidoc-br?>
+<?asciidoc-br?>
+<literal>PPS Tool button:</literal> is supported by Windows and microcontroller that have PPS.&#160;&#160;Selection will launch the PPS Tool application.</simpara>
+<simpara><literal>GCB Pref button:</literal> Great Cow BASIC preferences is for Windows only.&#160;&#160;Selection will launch the Great Cow BASIC preferences application.</simpara>
+<simpara><literal>GCB IDEbutton:</literal>  Great Cow BASIC preferences is for Windows only.&#160;&#160;Selection will launch the SynWrite IDE.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">DashBoard</emphasis></simpara>
+<simpara>Selects microcontroller specific datasheets.
+<?asciidoc-br?>
+<literal>Datasheet button:</literal> &#160;&#160; Will open the Microchip PDF datasheet file for the selected PIC microcontroller in your web browser.</simpara>
+<simpara><literal>Errata button</literal>&#160;&#160;Will open the Microchip PDF errata file for the selected PIC microcontroller in your web browser.</simpara>
+<simpara><literal>PIC webpage button</literal>&#160;&#160;Will open the Microchip web page for the selected PIC microcontroller.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Copy Config</emphasis></simpara>
+<simpara><literal>Copy Config button:</literal> Copy any of the configuration options set to the CUT/PASTE clipboard.&#160;&#160;You can paste them into your Great Cow BASIC IDE or other editor.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Reset Config</emphasis></simpara>
+<simpara><literal>Reset Config button:</literal> Resets the configuration options removing all edits.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Configuation Options</emphasis></simpara>
+<simpara><literal>Dropdown dialogs:</literal> This permits the editing of the configuration.&#160;&#160;
+Items marked with <literal>*</literal> are the Great Cow BASIC default selections.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?></simpara>
+</section>
+<section xml:id="_options_tab">
+<title>Options Tab</title>
+<simpara><emphasis role="strong">Introduction:</emphasis></simpara>
+<simpara>This tab shows the config options specific to the microcontroller.</simpara>
+<simpara>The first parameter is the configuration field that can be used to expose specific configuration bits.   The other parameters are the configuration field options that can be selected.</simpara>
+<simpara>For specific details of the configuration options, please refer to the microcontroller datasheet and if applicable the errata for the microcontroller.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Search</emphasis></simpara>
+<simpara>The <literal>search:</literal> dialog enables basic search of the data shown.
+<?asciidoc-br?>
+<?asciidoc-br?></simpara>
+<simpara><emphasis role="strong">Example tab</emphasis></simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/Options.PNG" align="center"/>
+</imageobject>
+<textobject><phrase>graphic</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?></simpara>
+</section>
+<section xml:id="_bits_tab">
+<title>Bits Tab</title>
+<simpara><emphasis role="strong">Introduction:</emphasis></simpara>
+<simpara>This tab shows the register Bits specific to the microcontroller.</simpara>
+<simpara>The four colums show the bit name, register relate to the bit, the bit address (0 to 7) and the address expressed as Regiser.bit_value.</simpara>
+<simpara>For specific details of the bits, please refer to the microcontroller datasheet and if applicable the errata for the microcontroller.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Search</emphasis></simpara>
+<simpara>The <literal>search:</literal> dialog enables basic search of the data shown.
+<?asciidoc-br?>
+<?asciidoc-br?></simpara>
+<simpara><emphasis role="strong">Example tab</emphasis></simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/Bits.PNG" align="center"/>
+</imageobject>
+<textobject><phrase>graphic</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?></simpara>
+</section>
+<section xml:id="_chipdata_tab">
+<title>ChipData Tab</title>
+<simpara><emphasis role="strong">Introduction:</emphasis></simpara>
+<simpara>This tab shows the Great Cow BASIC description of the microcontroller.</simpara>
+<simpara>The three colums shows the Great Cow BASIC constant name, the value of the constant and the explaination of the constant.&#160;&#160;
+All constants are available within user programs with the prefix of <literal>CHIP</literal>.</simpara>
+<simpara>For specific details of a constant, please refer to the microcontroller datasheet, the errata for the microcontroller or ask a question on the Great Cow BASIC forum, see <link xlink:href="http://sourceforge.net/projects/gcbasic/forums">http://sourceforge.net/projects/gcbasic/forums</link></simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Search</emphasis></simpara>
+<simpara>The <literal>search:</literal> dialog enables basic search of the data shown.
+<?asciidoc-br?>
+<?asciidoc-br?></simpara>
+<simpara><emphasis role="strong">Example tab</emphasis></simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/ChipData.PNG" align="center"/>
+</imageobject>
+<textobject><phrase>graphic</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?></simpara>
+</section>
+<section xml:id="_interrupts_tab">
+<title>Interrupts Tab</title>
+<simpara><emphasis role="strong">Introduction:</emphasis></simpara>
+<simpara>This tab shows the Great Cow BASIC interrupts for the microcontroller.</simpara>
+<simpara>The three colums shows the Great Cow BASIC interrupt name, the bit Great Cow BASIC will use to enable the interrupt and the bit Great Cow BASIC will use to clear the interrupt after the interrupt routine has completed..&#160;&#160;
+All Great Cow BASIC interrupts are available within user programs when using <literal>ON INTERRUPT</literal>.</simpara>
+<simpara>For specific details of a interrupt, please refer to the microcontroller datasheet, the errata for the microcontroller or ask a question on the Great Cow BASIC forum, see <link xlink:href="http://sourceforge.net/projects/gcbasic/forums">http://sourceforge.net/projects/gcbasic/forums</link></simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Search</emphasis></simpara>
+<simpara>The <literal>search:</literal> dialog enables basic search of the data shown.
+<?asciidoc-br?>
+<?asciidoc-br?></simpara>
+<simpara><emphasis role="strong">Example tab</emphasis></simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/Interrupts.PNG" align="center"/>
+</imageobject>
+<textobject><phrase>graphic</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?></simpara>
+</section>
+<section xml:id="_registers_tab">
+<title>Registers Tab</title>
+<simpara><emphasis role="strong">Introduction:</emphasis></simpara>
+<simpara>This tab shows the register specific to the microcontroller.</simpara>
+<simpara>The three colums show the register name, the decimal address of the register and the hex address of the register.</simpara>
+<simpara>For specific details of the register, please refer to the microcontroller datasheet and if applicable the errata for the microcontroller.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?>
+<emphasis role="strong">Search</emphasis></simpara>
+<simpara>The <literal>search:</literal> dialog enables basic search of the data shown.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?></simpara>
+<simpara><emphasis role="strong">Example tab</emphasis></simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/Registers.PNG" align="center"/>
+</imageobject>
+<textobject><phrase>graphic</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?></simpara>
+</section>
+<section xml:id="_filters">
+<title>Filters</title>
+<simpara><emphasis role="strong">Introduction:</emphasis></simpara>
+<simpara>This dialog enables the setting of a microcontroller filter, or, to clear an existing filter.&#160;&#160;
+A filter can be used to reduce the number of microcontrollers show in the Selection tab PIC dropdown.&#160;&#160;</simpara>
+<simpara>The picture shows the dialog:</simpara>
+<informalfigure>
+<mediaobject>
+<imageobject>
+<imagedata fileref="./images/ChipFilter.PNG" align="center"/>
+</imageobject>
+<textobject><phrase>graphic</phrase></textobject>
+</mediaobject>
+</informalfigure>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?></simpara>
+<simpara>The search is a basic match.&#160;&#160;
+The search does not support wildcards or regex searches.&#160;&#160;</simpara>
+<simpara>To clear a filter select the <literal>clear:</literal> button.</simpara>
+<simpara><?asciidoc-br?>
+<?asciidoc-br?></simpara>
+</section>
+</article>

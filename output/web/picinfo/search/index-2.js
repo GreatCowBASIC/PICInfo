@@ -1,5 +1,4 @@
 //Auto generated index for searching by xsl-webhelpindexer for DocBook Webhelp.# Kasun Gajasinghe, University of Moratuwa
-w["editor."]="9*1";
 w["edits."]="9*1";
 w["either"]="9*1";
 w["enabl"]="1*1,3*1,4*1,5*2,6*1,7*1,8*1,9*1";
@@ -96,4 +95,5 @@ w["past"]="9*3";
 w["pdf"]="9*2";
 w["permit"]="9*1";
 w["pic"]="4*1,6*2,9*6";
+w["picinfo"]="0*52,2*1,3*1,4*1,5*1,6*51,7*1,8*1,9*1";
 

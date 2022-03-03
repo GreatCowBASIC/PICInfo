@@ -87,7 +87,8 @@ del *.md
 del *.mod > nul
 
 
-del D:\PICInfo_help\trunk\output\wiki\*.* /Q
+
+del ..\..\..\..\PICInfo.git\wiki\*.* /Q
 FOR /F "tokens=*" %%G IN ('dir/b /s ^"*.html^"') DO (
 	rem echo %%G
 	rem "%~d1%~p1%~n1.lst"
@@ -101,19 +102,19 @@ copy *.mod ..\md\*.md
 del *.md
 ren *.mod *.md
 ren ..\md\index.md  "home.md"
-del /q D:\PICInfo_help\trunk\output\wiki\*.*
-copy ..\md\*.* D:\PICInfo_help\trunk\output\wiki
-del /q D:\PICInfo_help\trunk\output\wiki\*.ht*
-del /q D:\PICInfo_help\trunk\output\wiki\gcbasic.*
-del /q D:\PICInfo_help\trunk\output\wiki\*.css
-del /q D:\PICInfo_help\trunk\output\wiki\*.chm
-del /q D:\PICInfo_help\trunk\output\wiki\*.hh*
+del /q ..\..\..\..\PICInfo.git\trunk\*.*
+copy ..\md\*.* ..\..\..\..\PICInfo.wiki.git\trunk
+del /q ..\..\..\..\PICInfo.wiki.git\trunk\*.ht*
+del /q ..\..\..\..\PICInfo.wiki.git\trunk\gcbasic.*
+del /q ..\..\..\..\PICInfo.wiki.git\trunk\*.css
+del /q ..\..\..\..\PICInfo.wiki.git\trunk\*.chm
+del /q ..\..\..\..\PICInfo.wiki.git\trunk\*.hh*
 
 
 
 
 
-copy  D:\PICInfo_help\trunk\source\images D:\PICInfo_help\trunk\output\wiki\images
+copy  ..\..\source\images ..\..\..\..\PICInfo.wiki.git\trunk\images
 
 del *.htm*
 del *.hh*
